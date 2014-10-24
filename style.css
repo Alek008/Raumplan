@@ -1,0 +1,60 @@
+.links {
+width: 50%;
+float: left;
+margin-top:50px;
+}
+.rechts { 
+width: 49%;
+float : right;
+
+}
+.bild-rechts{
+float: right;
+width: 200 px; 
+height: 200 px;
+margin-right: 50px ;
+}
+
+.personen-bild{
+float: right;
+margin-right: 50px;
+vertical-align: top;
+height: 100px;
+margin-right: 12px;
+margin-top: -68px;
+}
+
+.svgimage{
+#width: 709px;
+width: 433px;
+#height: 262px;
+height: 113px;
+float: right;
+
+}
+
+.mitscroll{
+position: fixed;
+background:#e8e8e8;
+z-index:10;
+}
+
+.mitscroll-bilder {
+position: fixed;
+background-color:#fff;
+z-index:10;
+top:50px;
+padding-left: 65px;
+}
+
+.nav-tabs > li {
+	margin-top:3px;
+}
+
+
+h2 {
+float: left;
+font-size:0.9em;
+font-weight: 100;
+font-family: helvetica;
+}

@@ -1,0 +1,328 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>Personeninfonfo</title>
+<link rel="stylesheet" href="jquery-ui.css">
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+<script src="//code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
+<script src="bootstrap/js/bootstrap.js"></script>
+<link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+<link rel="stylesheet" href="style.css">
+<script>
+
+
+
+var rooms = [];
+var erdgeschoss;
+var erstes;
+var zweites;
+
+function init (){
+	initRooms();
+	load_list();
+}
+
+function initRooms(){
+
+	erdgeschoss = Snap("#erdgeschoss");
+	erstes = Snap("#erstes");
+	zweites = Snap("#zweites");
+	
+	Snap.load("eg.svg", function (f) {
+		erdgeschoss.append(f.select("g"));
+		rooms["raume02"] = erdgeschoss.select("#raume02");
+		rooms["raume03"] = erdgeschoss.select("#raume03");
+		rooms["raume04"] = erdgeschoss.select("#raume04");
+		rooms["raume05"] = erdgeschoss.select("#raume05");
+		rooms["raume06"] = erdgeschoss.select("#raume06");
+		rooms["raume07"] = erdgeschoss.select("#raume07");
+		hideAllRooms();
+	});
+	 Snap.load("1og.svg", function (f) {
+		erstes.append(f.select("g"));
+		rooms["raum101"] = erstes.select("#raum101");
+		rooms["raum104"] = erstes.select("#raum104");
+		rooms["raum104a"] = erstes.select("#raum104a");
+		rooms["raum106"] = erstes.select("#raum106");
+		rooms["raum107"] = erstes.select("#raum107");
+		rooms["raum108"] = erstes.select("#raum108");
+		rooms["raum109"] = erstes.select("#raum109");
+		hideAllRooms();		
+	});		
+   Snap.load("2og.svg", function (f) {
+		zweites.append(f.select("g"));
+		rooms["raum201"] = zweites.select("#raum201");
+		rooms["raum203"] = zweites.select("#raum203");
+		rooms["raum204"] = zweites.select("#raum204");
+		rooms["raum205"] = zweites.select("#raum205");
+		rooms["raum206"] = zweites.select("#raum206");
+		rooms["raum207"] = zweites.select("#raum207");
+		rooms["raum208"] = zweites.select("#raum208");
+		rooms["raum209"] = zweites.select("#raum209");
+		hideAllRooms();
+	});	
+}
+
+function hideAllRooms(){
+	for (var room in rooms) {
+		if (rooms[room]) {
+			rooms[room].attr({
+				visibility: "hidden"
+			});
+		}
+	}
+}
+
+function showRoom(room) {
+	hideAllRooms();
+	if (rooms[room]) {
+		rooms[room].attr({
+			visibility: "visible"
+		}); 
+	}	
+}
+			
+function load_list() {
+$( "#accordion" ).accordion({active: false, collapsible: true});
+	$.ajax({
+		url: 'personen.php',
+		dataType: 'json', 
+		success: function(data) {
+			$.each(data, function(k, v){
+					var fax = "";
+					if (v.fax) {
+						fax = "Fax: " + v.fax + "<br/>";
+					}
+					else{
+					fax = "</br>";
+					}
+					var email = "";
+					if (v.email){
+					email = "E-Mail: " + v.email + "<br/>";
+					}
+					else{
+					email="</br>";
+					}
+					
+					var telefon = "";
+					if (v.telefon){
+					telefon = "Telefon: " + v.telefon + "<br/>";
+					}
+					else{
+					telefon="</br>";
+					}			
+					$("#accordion").append('<h3 onclick="showRoom(\'' + v.svg_element +'\')"> '+v.vorname + ' ' + v.nachname+ '</h3> \
+					<div><p>' +email+' '+telefon+''+fax+ '<img class="personen-bild" id="person'+v.mitarbeiter_id+'"></p></div>').accordion('destroy').accordion();
+					$("#person"+v.mitarbeiter_id).attr('src', v.bild).load()
+					;
+			}); 
+		}
+	});
+}
+
+		function search_list() {
+			$( "#accordion_1" ).accordion({active: false, collapsible: true});
+					$.ajax({
+						url: 'search.php?suche='+$('#suchfeld').val(),
+						dataType: 'json', 
+						success: function(data) {
+							$.each(data, function(k, v ){
+									var fax = "";
+									if (v.fax) {
+										fax = "Fax: " + v.fax + "<br/>";
+									}
+									else{
+									fax = "</br>";
+									}
+									var email = "";
+									if (v.email){
+									email = "E-Mail: " + v.email + "<br/>";
+									}
+									else{
+									email="</br>";
+									}
+									
+									var telefon = "";
+									if (v.telefon){
+										telefon = "Telefon: " + v.telefon + "<br/>";
+									}
+									else{
+										telefon="</br>";
+									}			
+									
+									
+									$("#accordion_1").empty();
+									$("#accordion_1").append('<h3 onclick="showRoom(\'' + v.svg_element +'\')"> '+v.vorname + ' ' + v.nachname+ '</h3> \
+									<div><p>' +email+' '+telefon+''+fax+ '<img class="personen-bild" src="'+v.bild+'"></p></div>').accordion('destroy').accordion();
+									
+									var svg_element = v.svg_element;
+									
+									for (var room in rooms) {
+										if (rooms[room]) {
+											rooms[room].attr({
+												visibility: "hidden"
+											});
+										}
+									}
+									
+									rooms[svg_element].attr({
+									visibility: "visible"
+								});
+							}); 
+						}
+					});
+						setTimeout(function(){
+							$('#ziel1').addClass('active');
+							$('#ziel2').removeClass('active');
+							$('#ziel3').removeClass('active');
+							$('#tab3').removeClass('active');
+							$('#tab2').removeClass('active');
+							$('#tab1').addClass('active');
+						}, 300000);
+					}
+
+</script>
+<script src ="snap.svg.js"> </script>
+</head>
+
+<body onload="init()">
+<div class ="mitscroll">
+	<ul  class="nav nav-tabs" role="tablist">
+	  <li id="tab1" class="active"><a id="toggle1" href="#rauminfo">Rauminfo</a></li>
+	  <!-- <li id="tab2"><a id="toggle2" href="#arebitsgruppen">Arbeitsgruppen</a></li>-->
+	   <li id="tab3"><a id="toggle3" href="#suchergebnisse">Suchergebnisse</a></li>
+	  <li>
+	  <!--searchbar-->
+		<div style="width:300px;float:left;margin-left:362px;margin-top:4px;clear:both;">
+			<div class="input-group">
+			  <input placeholder="Suche nach Nachname" type="text" class="form-control" id="suchfeld" name="suchfeld">
+			  <span class="input-group-btn">
+				<button class="btn btn-default" type="button style:padding:6.5px 12px;" id="suche" onclick="search_list()"><font color="#429FE3">Suchen</font></button>
+			  </span>
+			 
+			</div><!-- /input-group -->
+		</div>
+		
+		<div style="clear:both;"></div>
+		<!--searchbar end-->
+	  </li>
+	</ul>
+</div>
+	
+	<div class="tab-content">
+		<div id="ziel1" class="tab-pane active" id="rauminfo" onclick="zurueck()">
+			<div class="links">
+			
+				<div id="accordion">
+				</div>
+			
+			</div>
+		</div>
+			<!--<div id="ziel2" class="tab-pane" id="arbeitsgruppen" onclick="zurueck()">
+		
+			
+			
+		</div>
+		-->
+		<div id="ziel3" class="tab-pane" id="suchergebnisse">
+			
+			<div class="links">
+				<div id="accordion_1"></div>
+			</div>
+		</div>
+	
+	
+	
+	<div class="rechts">
+	<div class="mitscroll-bilder">
+		<div class ="bild-rechts" class="etage" class="mitscroll">
+			
+			<h2>2.Obergeschoss</h2>
+				<svg id="zweites" class="svgimage">
+				</svg>
+			</div>
+			
+		<div class ="bild-rechts" class="etage">
+			<h2>1.Obergeschoss</h2>
+				<svg id="erstes" class="svgimage">
+				
+				</svg>
+			</div>
+		
+		
+		<div class ="bild-rechts" class="etage">
+			<h2>Erdgeschoss</h2>
+				<svg id="erdgeschoss" class="svgimage">
+
+				</svg>
+			</div>
+	</div>
+	</div>	
+	
+	<script>
+		$('#toggle2').click(function(){
+			$('#ziel2').addClass('active');
+			$('#ziel1').removeClass('active');
+			$('#ziel3').removeClass('active');
+			$('#tab3').removeClass('active');
+			$('#tab1').removeClass('active');
+			$('#tab2').addClass('active');
+			setTimeout(function(){
+				$('#ziel1').addClass('active');
+				$('#ziel2').removeClass('active');
+				$('#ziel3').removeClass('active');
+				$('#tab3').removeClass('active');
+				$('#tab2').removeClass('active');
+				$('#tab1').addClass('active');
+			}, 300000);
+		});
+		
+		$('#toggle1').click(function(){
+			$('#ziel1').addClass('active');
+			$('#ziel2').removeClass('active');
+			$('#ziel3').removeClass('active');
+			$('#tab3').removeClass('active');
+			$('#tab2').removeClass('active');
+			$('#tab1').addClass('active');
+			
+		});
+		
+		$('#toggle3').click(function(){
+			$('#ziel3').addClass('active');
+			$('#ziel2').removeClass('active');
+			$('#ziel1').removeClass('active');
+			$('#tab1').removeClass('active');
+			$('#tab2').removeClass('active');
+			$('#tab3').addClass('active');
+			setTimeout(function(){
+				$('#ziel1').addClass('active');
+				$('#ziel2').removeClass('active');
+				$('#ziel3').removeClass('active');
+				$('#tab3').removeClass('active');
+				$('#tab2').removeClass('active');
+				$('#tab1').addClass('active');
+			}, 300000);
+		});
+         
+		 $( "button" ).click(function(){
+			$('#ziel3').addClass('active');
+			$('#ziel2').removeClass('active');
+			$('#ziel1').removeClass('active');
+			$('#tab1').removeClass('active');
+			$('#tab2').removeClass('active');
+			$('#tab3').addClass('active');
+			$('#ziel3').remove('accordion_1');
+			
+		});
+		 $( "button" )
+	</script>
+
+	</body>
+
+
+</html>
