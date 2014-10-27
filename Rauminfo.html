@@ -198,7 +198,7 @@ $( "#accordion" ).accordion({active: false, collapsible: true});
 	   <li id="tab3"><a id="toggle3" href="#suchergebnisse">Suchergebnisse</a></li>
 	  <li>
 	  <!--searchbar-->
-		<div style="width:300px;float:left;margin-left:362px;margin-top:4px;clear:both;">
+		<div style="width:300px;float:left;margin-left:494px;margin-top:4px;clear:both;">
 			<div class="input-group">
 			  <input placeholder="Suche nach Nachname" type="text" class="form-control" id="suchfeld" name="suchfeld">
 			  <span class="input-group-btn">
@@ -319,7 +319,21 @@ $( "#accordion" ).accordion({active: false, collapsible: true});
 			$('#ziel3').remove('accordion_1');
 			
 		});
-		 $( "button" )
+		document.onkeydown = function(event) {
+			if (event.keyCode == 13) {
+				event.cancelBubble = true;
+				event.returnValue = false;
+				search_list();
+				$('#ziel3').addClass('active');
+				$('#ziel2').removeClass('active');
+				$('#ziel1').removeClass('active');
+				$('#tab1').removeClass('active');
+				$('#tab2').removeClass('active');
+				$('#tab3').addClass('active');
+				$('#ziel3').remove('accordion_1');
+			}
+			return event.returnValue;
+		}
 	</script>
 
 	</body>
