@@ -1,7 +1,6 @@
 <?php
+	include 'config.php';
 
-	$verbindung = mysqli_connect("localhost", "rauminfo", "virtuos", "rauminfo") or 
-		die ("keine Verbindung möglich. Benutzername oder Passwort sind falsch");
 	$input =$_GET["suche"];
 	//$abfrage = "SELECT * FROM mitarbeiter LEFT JOIN (raeume) on (mitarbeiter.raum_id = raeume.raum_id) WHERE mitarbeiter.nachname LIKE BINARY '%$input%' ORDER BY mitarbeiter.nachname;";
 	$abfrage="SELECT * FROM `mitarbeiter` LEFT JOIN (raeume) on (mitarbeiter.raum_id = raeume.raum_id) WHERE mitarbeiter.nachname LIKE '%$input%' OR mitarbeiter.vorname LIKE '%$input%' ;";
@@ -21,5 +20,5 @@
 		$results[$i++] = $row;
 	}
 	print json_encode($results);
-}
+
 ?>

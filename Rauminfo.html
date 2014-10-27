@@ -7,12 +7,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 <title>Personeninfonfo</title>
-<link rel="stylesheet" href="jquery-ui.css">
+<link rel="stylesheet" href="css/jquery-ui.css">
 <script src="//code.jquery.com/jquery-1.10.2.js"></script>
 <script src="//code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
 <script src="bootstrap/js/bootstrap.js"></script>
 <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="css/style.css">
 <script>
 
 
@@ -33,7 +33,7 @@ function initRooms(){
 	erstes = Snap("#erstes");
 	zweites = Snap("#zweites");
 	
-	Snap.load("eg.svg", function (f) {
+	Snap.load("img/eg.svg", function (f) {
 		erdgeschoss.append(f.select("g"));
 		rooms["raume02"] = erdgeschoss.select("#raume02");
 		rooms["raume03"] = erdgeschoss.select("#raume03");
@@ -43,7 +43,7 @@ function initRooms(){
 		rooms["raume07"] = erdgeschoss.select("#raume07");
 		hideAllRooms();
 	});
-	 Snap.load("1og.svg", function (f) {
+	 Snap.load("img/1og.svg", function (f) {
 		erstes.append(f.select("g"));
 		rooms["raum101"] = erstes.select("#raum101");
 		rooms["raum104"] = erstes.select("#raum104");
@@ -54,7 +54,7 @@ function initRooms(){
 		rooms["raum109"] = erstes.select("#raum109");
 		hideAllRooms();		
 	});		
-   Snap.load("2og.svg", function (f) {
+   Snap.load("img/2og.svg", function (f) {
 		zweites.append(f.select("g"));
 		rooms["raum201"] = zweites.select("#raum201");
 		rooms["raum203"] = zweites.select("#raum203");
@@ -115,8 +115,11 @@ $( "#accordion" ).accordion({active: false, collapsible: true});
 					}
 					else{
 					telefon="</br>";
-					}			
-					$("#accordion").append('<h3 onclick="showRoom(\'' + v.svg_element +'\')"> '+v.vorname + ' ' + v.nachname+ '</h3> \
+					}
+
+					var slideNumber = v.etage;
+
+					$("#accordion").append('<h3 onclick="showRoom(\'' + v.svg_element +'\')" data-target="#carousel-example-generic" data-slide-to="'+slideNumber+'"> '+v.vorname + ' ' + v.nachname+ '</h3> \
 					<div><p>' +email+' '+telefon+''+fax+ '<img class="personen-bild" id="person'+v.mitarbeiter_id+'"></p></div>').accordion('destroy').accordion();
 					$("#person"+v.mitarbeiter_id).attr('src', v.bild).load()
 					;
@@ -153,9 +156,23 @@ $( "#accordion" ).accordion({active: false, collapsible: true});
 									}
 									else{
 										telefon="</br>";
-									}			
-									
-									
+									}
+
+									var slideNumber = v.etage;
+									if (slideNumber == "0") {
+										slideNumber = 0;
+									} else {
+										if (slideNumber == "1"){
+											slideNumber = 1;
+										} else {
+											if (slideNumber == "2"){
+												slideNumber = 2;
+											}
+										}
+									}
+
+									$('#carousel-example-generic').carousel(slideNumber); // Slide zum passenden SVG
+
 									$("#accordion_1").empty();
 									$("#accordion_1").append('<h3 onclick="showRoom(\'' + v.svg_element +'\')"> '+v.vorname + ' ' + v.nachname+ '</h3> \
 									<div><p>' +email+' '+telefon+''+fax+ '<img class="personen-bild" src="'+v.bild+'"></p></div>').accordion('destroy').accordion();
@@ -187,7 +204,7 @@ $( "#accordion" ).accordion({active: false, collapsible: true});
 					}
 
 </script>
-<script src ="snap.svg.js"> </script>
+<script src ="js/snap.svg.js"> </script>
 </head>
 
 <body onload="init()">
@@ -240,62 +257,23 @@ $( "#accordion" ).accordion({active: false, collapsible: true});
 	
 	<div class="rechts">
 	<div class="mitscroll-bilder">
-
-
-			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-		  <!-- Indicators -->
-		  <ol class="carousel-indicators">
-		    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-		    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-		    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-		  </ol>
-
+			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="false">
 		  <!-- Wrapper for slides -->
 		  <div class="carousel-inner">
 		    <div class="item active">
-		      <svg id="zweites" class="svgimage"></svg>
+		      <svg id="erdgeschoss" class="svgimage"></svg>
 		      <div class="carousel-caption"></div>
 		    </div>
 		    <div class="item">
 		      <svg id="erstes" class="svgimage"></svg>
 		      <div class="carousel-caption"></div>
 		    </div>
+		    <div class="item">
+		      <svg id="zweites" class="svgimage"></svg>
+		      <div class="carousel-caption"></div>
+		    </div>
 		  </div>
-
-		  <!-- Controls -->
-		  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-		    <span class="glyphicon glyphicon-chevron-left"></span>
-		  </a>
-		  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-		    <span class="glyphicon glyphicon-chevron-right"></span>
-		  </a>
 		</div>
-
-
-
-
-		<!-- <div class ="bild-rechts" class="etage" class="mitscroll">
-			
-			<h2>2.Obergeschoss</h2>
-				<svg id="zweites" class="svgimage">
-				</svg>
-			</div>
-			
-		<div class ="bild-rechts" class="etage">
-			<h2>1.Obergeschoss</h2>
-				<svg id="erstes" class="svgimage">
-				
-				</svg>
-			</div>
-		
-		
-		<div class ="bild-rechts" class="etage">
-			<h2>Erdgeschoss</h2>
-				<svg id="erdgeschoss" class="svgimage">
-
-				</svg>
-			</div>
-	</div> -->
 	</div>	
 	
 	<script>

@@ -1,7 +1,6 @@
 <?php
 
-$verbindung = mysqli_connect("localhost", "rauminfo", "virtuos", "rauminfo") or 
-	die ("keine Verbindung möglich. Benutzername oder Passwort sind falsch");
+include 'config.php';
 
 $abfrage = "SELECT * FROM mitarbeiter LEFT JOIN (raeume) on (mitarbeiter.raum_id = raeume.raum_id) ORDER BY mitarbeiter.nachname ";
 $ergebnis = mysqli_query($verbindung, $abfrage);
