@@ -10,7 +10,7 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="433"
-   height="112"
+   height="280"
    id="svg3882"
    version="1.1"
    inkscape:version="0.48.5 r10040"
@@ -53,39 +53,39 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(0,-940.36216)">
+     transform="translate(0,-772.36216)">
     <path
        style="fill:#ffff00;stroke:none"
-       d="m 33.749142,1018.3871 89.862238,0 -9.77371,10.2988 -11.10469,0 -22.976328,23.7901 -79.19489253,-0.073 z"
+       d="m 41.872242,982.33037 106.569148,0 -11.59081,20.54493 -13.16924,0 -27.248013,47.4584 -93.9185648,-0.1456 z"
        id="raume02"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="ccccccc" />
     <path
        style="fill:#ffff00;stroke:none"
-       d="m 210.43144,1018.1151 -32.78458,34.099 80.11733,0.034 32.74358,-34.1688 z"
+       d="m 251.40277,981.78776 -38.87979,68.02354 95.0125,0.068 38.83117,-68.16275 z"
        id="raume07"
        inkscape:connector-curvature="0" />
     <path
        style="fill:#ffff00;stroke:none"
-       d="m 211.05037,1017.4469 38.43488,-39.94392 80.02201,0.10552 -37.98221,39.9075 z"
+       d="m 252.13677,980.45478 45.58058,-79.68336 94.89945,0.2105 -45.04374,79.61071 z"
        id="raume06"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="ccccc" />
     <path
        style="fill:#ffff00;stroke:none"
-       d="m 79.772862,1017.464 15.18435,-15.9178 68.010778,0.05 -15.35821,15.9426 z"
+       d="m 96.452551,980.4889 18.007379,-31.75412 80.65513,0.0997 -18.21356,31.80358 z"
        id="raume03"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="ccccc" />
     <path
        style="fill:#ffff00"
-       d="m 153.57089,940.63284 211.50139,-0.0524 -34.87116,36.5725 -211.52185,-0.07 z"
+       d="m 183.97088,827.21988 250.82308,-0.10453 -41.3543,72.95778 -250.84734,-0.13964 z"
        id="raume05"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="ccccc" />
     <g
        id="g4160"
-       transform="matrix(0.51720229,0,0,0.44183974,-0.98813175,588.35903)">
+       transform="matrix(0.61335895,0,0,0.88141769,0.6767199,124.47556)">
       <path
          inkscape:label="#raume04"
          sodipodi:nodetypes="ccccc"
@@ -97,7 +97,7 @@
     </g>
     <g
        id="g8479"
-       transform="matrix(0.5154795,0,-0.17233106,0.17832922,295.11988,910.97809)">
+       transform="matrix(0.61131587,0,-0.20437032,0.35574557,351.83623,768.06218)">
       <g
          id="g5033">
         <g
@@ -1707,7 +1707,7 @@
        xml:space="preserve"
        id="flowRoot3312"
        style="font-size:13px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial Bold"
-       transform="translate(-19.192898,788.64222)"><flowRegion
+       transform="translate(-17.291248,786.74057)"><flowRegion
          id="flowRegion3314"><rect
            id="rect3316"
            width="245"
@@ -1720,7 +1720,8 @@
          id="flowPara3357" /></flowRoot>    <flowRoot
        xml:space="preserve"
        id="flowRoot3320"
-       style="font-size:13px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial Bold"><flowRegion
+       style="font-size:13px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial Bold"
+       transform="translate(1.9016496,-1.9016496)"><flowRegion
          id="flowRegion3322"><rect
            id="rect3324"
            width="62.142857"
@@ -1731,7 +1732,7 @@
        xml:space="preserve"
        id="flowRoot3332"
        style="font-size:13px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial Bold"
-       transform="matrix(0.51720229,0,0,0.44183974,8.9384781,940.38311)"><flowRegion
+       transform="matrix(0.61335895,0,0,0.88141769,12.448855,826.7217)"><flowRegion
          id="flowRegion3334"><rect
            id="rect3336"
            width="75"
@@ -1742,7 +1743,7 @@
        xml:space="preserve"
        id="flowRoot3340"
        style="font-size:13px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial Bold"
-       transform="translate(-3.5355339,793.18791)"><flowRegion
+       transform="translate(-1.6338843,791.28626)"><flowRegion
          id="flowRegion3342"><rect
            id="rect3344"
            width="74.285713"
@@ -1753,7 +1754,7 @@
        xml:space="preserve"
        id="flowRoot3348"
        style="font-size:13px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial Bold"
-       transform="translate(0,790.15745)"><flowRegion
+       transform="translate(1.9016496,788.2558)"><flowRegion
          id="flowRegion3350"><rect
            id="rect3352"
            width="34.285713"
@@ -1763,7 +1764,8 @@
          id="flowPara3354">Damwn</flowPara></flowRoot>    <flowRoot
        xml:space="preserve"
        id="flowRoot3356"
-       style="font-size:13px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial Bold"><flowRegion
+       style="font-size:13px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial Bold"
+       transform="translate(1.9016496,-1.9016496)"><flowRegion
          id="flowRegion3358"><rect
            id="rect3360"
            width="17.857143"
@@ -1773,7 +1775,8 @@
          id="flowPara3362" /></flowRoot>    <flowRoot
        xml:space="preserve"
        id="flowRoot3364"
-       style="font-size:13px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial Bold"><flowRegion
+       style="font-size:13px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial Bold"
+       transform="translate(1.9016496,-1.9016496)"><flowRegion
          id="flowRegion3366"><rect
            id="rect3368"
            width="6.4285712"
@@ -1783,7 +1786,8 @@
          id="flowPara3370" /></flowRoot>    <flowRoot
        xml:space="preserve"
        id="flowRoot3372"
-       style="font-size:13px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial Bold"><flowRegion
+       style="font-size:13px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial Bold"
+       transform="translate(1.9016496,-1.9016496)"><flowRegion
          id="flowRegion3374"><rect
            id="rect3376"
            width="50"
@@ -1794,7 +1798,7 @@
        xml:space="preserve"
        id="flowRoot3380"
        style="font-size:13px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial Bold"
-       transform="translate(8.5862969,785.10668)"><flowRegion
+       transform="translate(10.487946,783.20503)"><flowRegion
          id="flowRegion3382"><rect
            id="rect3384"
            width="83.571426"
@@ -1805,7 +1809,7 @@
        xml:space="preserve"
        id="flowRoot3388"
        style="font-size:13px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial Bold"
-       transform="translate(10.606602,792.17775)"><flowRegion
+       transform="translate(12.508252,790.2761)"><flowRegion
          id="flowRegion3390"><rect
            id="rect3392"
            width="82.85714"
@@ -1816,86 +1820,87 @@
          id="flowPara3404" /></flowRoot>    <rect
        style="fill:none"
        id="rect3370"
-       width="175.02182"
-       height="35.929203"
-       x="154.70293"
-       y="940.63721" />
+       width="207.56134"
+       height="71.674484"
+       x="185.31339"
+       y="827.22864" />
     <text
        xml:space="preserve"
-       style="font-size:11.62010098px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial Bold"
-       x="189.85641"
-       y="1039.2048"
+       style="font-size:17.87292099px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial Bold"
+       x="294.23486"
+       y="723.1441"
        id="text3328"
        sodipodi:linespacing="125%"
-       transform="scale(1.0819266,0.92427709)"><tspan
+       transform="scale(0.83419283,1.1987636)"><tspan
          sodipodi:role="line"
-         x="189.85641"
-         y="1039.2048"
+         x="294.23486"
+         y="723.1441"
          id="tspan3406">42/E05</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:11.62010098px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial Bold"
-       x="110.63551"
-       y="1073.3134"
+       style="font-size:17.87292099px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial Bold"
+       x="172.38489"
+       y="775.60657"
        id="text3328-1"
        sodipodi:linespacing="125%"
-       transform="scale(1.0819266,0.92427709)"><tspan
+       transform="scale(0.83419283,1.1987636)"><tspan
          sodipodi:role="line"
-         x="110.63551"
-         y="1073.3134"
+         x="172.38489"
+         y="775.60657"
          id="tspan3406-7">42/E04</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:11.62010098px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial Bold"
-       x="225.60059"
-       y="1084.7437"
+       style="font-size:17.87292099px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial Bold"
+       x="349.2131"
+       y="793.18756"
        id="text3328-4"
        sodipodi:linespacing="125%"
-       transform="scale(1.0819266,0.92427709)"><tspan
+       transform="scale(0.83419283,1.1987636)"><tspan
          sodipodi:role="line"
-         x="225.60059"
-         y="1084.7437"
+         x="349.2131"
+         y="793.18756"
          id="tspan3406-0">42/E06</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:11.62010098px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial Bold"
-       x="196.32196"
-       y="1124.7511"
+       style="font-size:17.87292099px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial Bold"
+       x="304.17953"
+       y="854.72314"
        id="text3328-9"
        sodipodi:linespacing="125%"
-       transform="scale(1.0819266,0.92427709)"><tspan
+       transform="scale(0.83419283,1.1987636)"><tspan
          sodipodi:role="line"
-         x="196.32196"
-         y="1124.7511"
+         x="304.17953"
+         y="854.72314"
          id="tspan3406-4">42/E07</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:11.62010098px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial Bold"
-       x="30.506424"
-       y="1122.7906"
+       style="font-size:17.87292099px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial Bold"
+       x="49.138035"
+       y="851.70776"
        id="text3328-8"
        sodipodi:linespacing="125%"
-       transform="scale(1.0819266,0.92427709)"><tspan
+       transform="scale(0.83419283,1.1987636)"><tspan
          sodipodi:role="line"
-         x="30.506424"
-         y="1122.7906"
+         x="49.138035"
+         y="851.70776"
          id="tspan3406-8">42/E02</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:11.62010098px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial Bold"
-       x="93.985161"
-       y="1095.7648"
+       style="font-size:17.87292099px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial Bold"
+       x="146.77492"
+       y="810.13916"
        id="text3328-2"
        sodipodi:linespacing="125%"
-       transform="scale(1.0819266,0.92427709)"><tspan
+       transform="scale(0.83419283,1.1987636)"><tspan
          sodipodi:role="line"
-         x="93.985161"
-         y="1095.7648"
+         x="146.77492"
+         y="810.13916"
          id="tspan3406-45">42/E03</tspan></text>
     <flowRoot
        xml:space="preserve"
        id="flowRoot3379"
-       style="font-size:13px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial Bold"><flowRegion
+       style="font-size:13px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial Bold"
+       transform="translate(1.9016496,-1.9016496)"><flowRegion
          id="flowRegion3381"><rect
            id="rect3383"
            width="363.84894"
@@ -1905,7 +1910,8 @@
          id="flowPara3385" /></flowRoot>    <flowRoot
        xml:space="preserve"
        id="flowRoot3387"
-       style="font-size:13px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial Bold"><flowRegion
+       style="font-size:13px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial Bold"
+       transform="translate(1.9016496,-1.9016496)"><flowRegion
          id="flowRegion3389"><rect
            id="rect3391"
            width="442.45047"
@@ -1914,7 +1920,7 @@
            y="-39.673206" /></flowRegion><flowPara
          id="flowPara3393" /></flowRoot>    <g
        id="g3245"
-       transform="matrix(0.84571544,0,0,0.71357552,20.941805,330.18171)">
+       transform="matrix(1.0029483,0,0,1.4234982,26.683804,-390.55746)">
       <path
          style="fill:#ffffff;stroke:#000000;stroke-width:0.35633907"
          inkscape:connector-curvature="0"
@@ -1946,10 +1952,23 @@
          d="m 103.93913,989.88502 0.63965,5.2173 -5.650696,-0.0371 0.699112,-5.20851"
          id="imagebot_17" />
     </g>
-  </g>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3390"
+       style="font-size:28px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial Bold"
+       transform="translate(-119.17004,772.36216)"><flowRegion
+         id="flowRegion3392"><rect
+           id="rect3394"
+           width="412.65796"
+           height="35.497459"
+           x="12.677664"
+           y="11.233523"
+           style="font-size:28px" /></flowRegion><flowPara
+         id="flowPara3397"
+         style="font-size:28px;line-height:125%">Erdgeschoss</flowPara></flowRoot>  </g>
   <g
      inkscape:groupmode="layer"
      id="layer2"
      inkscape:label="Ebene"
-     transform="translate(0,-150.20471)" />
+     transform="translate(0,17.79529)" />
 </svg>
